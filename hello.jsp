@@ -1,4 +1,5 @@
-<html>
+<html 	xmlns="http://www.w3c.org/1999/xhtml"
+		xmlns:jsp="http://java.sun.com/JSP/Page">
 <head>
 	<title>Hello</title>
 </head>
@@ -83,5 +84,11 @@ while(fontSize < 6) {
 	fontSize++;
 }
 %>
+
+<jsp:include page="fecha.jsp" flush="true"></jsp:include>
+<jsp:include page="xmlTest.jsp" flush="true"></jsp:include>
+<p>
+<%= config.getServletName()%>
+</p>
 </body>
 </html>
