@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 
 public class LogFilter implements Filter {
 
-    public void init(FileConfig config) throws ServletException {
+    public void init(FilterConfig config) throws ServletException {
         String testParam = config.getInitParameter("test-param");
         System.out.println("Test param: " + testParam);
     }
@@ -14,7 +14,7 @@ public class LogFilter implements Filter {
                          response, FilterChain chain) throws IOException, ServletException {
         System.out.println("IP: " + request.getRemoteAddr() + ", Hora"
                            + new Date().toString());
-        chai.doFilter(request, response);
+        chain.doFilter(request, response);
     }
 
     public void destroy() {
