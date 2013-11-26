@@ -4,7 +4,7 @@
 	<title>Registro de usuario</title>
 </head>
 <body>
-	<form action="formProcessing.jsp" method="POST">
+	<form action="cookies.jsp" method="GET">
 		Nombre: <input type="text" name="nombre"/><br/>
 		Apellido: <input type="text" name="apellido">
 		<input type="checkbox" name="habilitado" checked="true">Habilitado
