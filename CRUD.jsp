@@ -5,18 +5,18 @@
 <%@page import="javax.servlet.http.*"%>
 
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sq"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 
 <html>
 <head>
 	<title>CRUD hacia employees</title>
 </head>
 <body>
-	<sq:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
+	<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
 		url="jdbc:mysql://localhost/test" user="test" password="test"/>
-	<sq:query dataSource="${snapshot}" var="result">
+	<sql:query dataSource="${snapshot}" var="result">
 		select * from employees
-	</sq:query>
+	</sql:query>
 	<table border="1" width="100%">
 		<tr>
 			<th>Emp ID</th>
