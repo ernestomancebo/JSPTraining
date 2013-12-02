@@ -1,0 +1,12 @@
+<books>
+	<book>
+		<name>La importancia de llamarce Ernesto</name>
+		<author>Oscar Wilde</author>
+		<price>150</price>
+	</book>
+	<book>
+		<name>El Viejo y el Mar</name>
+		<author>Ernest Hemingway</author>
+		<price>125</price>
+	</book>
+</books>
