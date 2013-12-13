@@ -10,7 +10,7 @@
 	</xsl:template>
 	<xsl:template match="books">
 		<table border="1" width="100%">
-			<xls:for-each select="book">
+			<xsl:for-each select="book">
 				<tr>
 					<td>
 						<i><xsl:value-of select="name"/></i>
@@ -22,7 +22,7 @@
 						<i><xsl:value-of select="price"/></i>
 					</td>
 				</tr>
-			</xls:for-each>
+			</xsl:for-each>
 		</table>
 	</xsl:template>
 </xsl:stylesheet>

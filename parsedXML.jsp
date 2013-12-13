@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h2>Info de libros</h2>
-<!-- 	<c:set var="xmltext">
+	<c:set var="xmltext">
 		<books>
 			<book>
 				<name>La importancia de llamarse Ernesto</name>
@@ -21,9 +21,7 @@
 			</book>
 		</books>
 	</c:set>
- -->
-	
-	<c:import url="http://localhost:8080/JSPTraining/books.xml" var="xmltext" />
+	<!-- <c:import var="xmltext" url="http://localhost:8080/JSPTraining/books.xml"/> -->
 	<c:import url="http://localhost:8080/JSPTraining/style.xsl" var="xslt" />
 	<x:transform xml="${xmltext}" xslt="${xslt}"/>
 </body>
